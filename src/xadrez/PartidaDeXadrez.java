@@ -25,6 +25,6 @@ public class PartidaDeXadrez {
 	
 	private void iniciarPartida() {
 		this.tabuleiro.lugarDaPeca(new Torre(tabuleiro, Cor.BRANCO), new Posicao(2, 1));
-		this.tabuleiro.lugarDaPeca(new Rei(tabuleiro, Cor.PRETO), new Posicao(0, 4));		
+		this.tabuleiro.lugarDaPeca(new Rei(tabuleiro, Cor.PRETO), new Posicao(1, 4));		
 	}
 }
