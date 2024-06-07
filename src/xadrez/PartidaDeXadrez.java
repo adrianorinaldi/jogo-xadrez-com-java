@@ -23,8 +23,12 @@ public class PartidaDeXadrez {
 		return pecas;
 	}
 	
+	private void novoLugarDaPeca(Character coluna, Integer row, PecaDeXadrez pecaDeXadrez) {
+		this.tabuleiro.lugarDaPeca(pecaDeXadrez, new PosicaoXadrez(coluna, row).posicaoMatriz());
+	}
+	
 	private void iniciarPartida() {
-		this.tabuleiro.lugarDaPeca(new Torre(tabuleiro, Cor.BRANCO), new Posicao(2, 1));
+		this.novoLugarDaPeca('b', 6, new Torre(tabuleiro, Cor.BRANCO));
 		this.tabuleiro.lugarDaPeca(new Rei(tabuleiro, Cor.PRETO), new Posicao(1, 4));		
 	}
 }
