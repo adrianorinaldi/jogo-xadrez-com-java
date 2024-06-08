@@ -12,6 +12,6 @@ public class Rei extends PecaDeXadrez{
 
 	@Override
 	public String toString() {
-		return "Re";
+		return "r";
 	}	
 }

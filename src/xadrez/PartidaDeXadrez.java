@@ -28,7 +28,19 @@ public class PartidaDeXadrez {
 	}
 	
 	private void iniciarPartida() {
-		this.novoLugarDaPeca('b', 6, new Torre(tabuleiro, Cor.BRANCO));
-		this.tabuleiro.lugarDaPeca(new Rei(tabuleiro, Cor.PRETO), new Posicao(1, 4));		
+
+		this.novoLugarDaPeca('c', 1, new Torre(tabuleiro, Cor.BRANCO));
+		this.novoLugarDaPeca('c', 2, new Torre(tabuleiro, Cor.BRANCO));
+		this.novoLugarDaPeca('d', 2, new Torre(tabuleiro, Cor.BRANCO));
+		this.novoLugarDaPeca('e', 2, new Torre(tabuleiro, Cor.BRANCO));
+		this.novoLugarDaPeca('e', 1, new Torre(tabuleiro, Cor.BRANCO));
+		this.novoLugarDaPeca('d', 1, new Rei(tabuleiro, Cor.BRANCO));
+
+		this.novoLugarDaPeca('c', 7, new Torre(tabuleiro, Cor.PRETO));
+		this.novoLugarDaPeca('c', 8, new Torre(tabuleiro, Cor.PRETO));
+		this.novoLugarDaPeca('d', 7, new Torre(tabuleiro, Cor.PRETO));
+		this.novoLugarDaPeca('e', 7, new Torre(tabuleiro, Cor.PRETO));
+		this.novoLugarDaPeca('e', 8, new Torre(tabuleiro, Cor.PRETO));
+		this.novoLugarDaPeca('d', 8, new Rei(tabuleiro, Cor.PRETO));
 	}
 }
