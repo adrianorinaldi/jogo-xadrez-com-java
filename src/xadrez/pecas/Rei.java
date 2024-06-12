@@ -13,5 +13,11 @@ public class Rei extends PecaDeXadrez{
 	@Override
 	public String toString() {
 		return "r";
+	}
+
+	@Override
+	public boolean[][] possivelMovimentos() {
+		boolean[][] mat = new boolean[getTabuleiro().getLinhas()][getTabuleiro().getColunas()];
+		return mat;
 	}	
 }
